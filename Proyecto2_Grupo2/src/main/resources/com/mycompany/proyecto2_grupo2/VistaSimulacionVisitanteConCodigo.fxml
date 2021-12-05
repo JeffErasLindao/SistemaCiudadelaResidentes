@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="aPaneFondo" fx:id="aPaneFondo" prefHeight="700.0" prefWidth="700.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyecto2_grupo2.VistaSimulacionVisitanteConCodigoController">
+    <stylesheets>
+        <URL value="@vistasimulacionvisitanteconcodigo.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutY="5.0" prefHeight="73.0" prefWidth="700.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="75.0" prefWidth="698.0" text="SIMULACION  VISITANTE">
+               <font>
+                  <Font size="55.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.9611111111111111" centerY="0.8904761904761904" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="53.0" layoutY="158.0" text="A continuacion ingrese el codigo que envió el Residente" textFill="#fcfcfc">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="314.0" text="CODIGO =" textFill="#fcfcfc">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField id="txtCodigoAcceso" fx:id="txtCodigoAcceso" layoutX="169.0" layoutY="310.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Button id="btnIngresar" fx:id="btnIngresar" layoutX="465.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#ingresarVisitante" prefHeight="51.0" prefWidth="139.0" text="INGRESAR">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button id="btnTerminarSimulacion" fx:id="btnTerminarSimulacion" layoutX="507.0" layoutY="617.0" mnemonicParsing="false" onAction="#terminarSimulacion" prefHeight="51.0" prefWidth="166.0" stylesheets="@vistasimulacionvisitanteconcodigo.css" text="TERMINAR SIMULACION" />
+      <ImageView fitHeight="189.0" fitWidth="227.0" layoutX="236.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@candado.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

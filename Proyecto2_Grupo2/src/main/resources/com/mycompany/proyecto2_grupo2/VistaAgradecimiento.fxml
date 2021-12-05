@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="paneFondo" fx:id="paneFondo" prefHeight="700.0" prefWidth="700.0" stylesheets="@vistaagradecimiento.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyecto2_grupo2.VistaAgradecimientoController">
+   <children>
+      <Button id="btnSalir" fx:id="btnSalir" alignment="CENTER" layoutX="386.0" layoutY="579.0" mnemonicParsing="false" onAction="#MostrarMenuInicial" prefHeight="42.0" prefWidth="83.0" text="SALIR">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

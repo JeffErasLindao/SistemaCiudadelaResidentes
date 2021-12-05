@@ -1,0 +1,8 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+#paneFondo{
+    -fx-background-image: url('sala.jpg');
+    -fx-background-size: 100% 100%;
+}

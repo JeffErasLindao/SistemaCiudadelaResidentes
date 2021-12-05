@@ -1,0 +1,21 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 sept. 2021, 2:40:43
+    Author     : jeras
+*/
+
+#hbFondo{
+    -fx-background-image: url('fondoPantalla.jpg');
+    -fx-background-size: 100% 100%;
+}
+
+#lblVistaPrincipal{
+    
+    -fx-text-fill : white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+}

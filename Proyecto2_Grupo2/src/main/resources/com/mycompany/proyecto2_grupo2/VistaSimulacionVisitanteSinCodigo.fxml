@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="aPaneFondo" fx:id="aPaneFondo" prefHeight="700.0" prefWidth="700.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyecto2_grupo2.VistaSimulacionVisitanteSinCodigoController">
+    <stylesheets>
+        <URL value="@vistasimulacionvisitantesincodigo.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutY="-1.0" prefHeight="71.0" prefWidth="700.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="71.0" prefWidth="700.0" text="SIMULACION VISITANTE">
+               <font>
+                  <Font size="58.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="1.0" centerY="0.9095238095238095" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="45.0" layoutY="115.0" text="Ingrese sus datos:" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="178.0" text="Nombre =" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField id="txtNombreVisitante" fx:id="txtNombreVisitante" layoutX="181.0" layoutY="178.0" prefHeight="38.0" prefWidth="257.0" />
+      <Button id="btnIngresar" fx:id="btnIngresar" layoutX="486.0" layoutY="540.0" mnemonicParsing="false" onMouseClicked="#soliciarIngreso" text="Solicitar Ingreso">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button id="btnTerminarSimulacion" fx:id="btnTerminarSimulacion" layoutX="528.0" layoutY="647.0" mnemonicParsing="false" onAction="#terminarSimulacion" prefHeight="39.0" prefWidth="158.0" stylesheets="@vistasimulacionvisitanteconcodigo.css" text="TERMINAR SIMULACION" />
+      <Label layoutX="48.0" layoutY="226.0" text="Cédula   =" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="350.0" text="Ingrese informacion del Residente que desea visitar:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField id="txtCedulaVisitante" fx:id="txtCedulaVisitante" layoutX="181.0" layoutY="226.0" prefHeight="38.0" prefWidth="257.0" />
+      <Label layoutX="47.0" layoutY="401.0" text="Nombre  =" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField id="txtNombreResidente" fx:id="txtNombreResidente" layoutX="180.0" layoutY="401.0" prefHeight="38.0" prefWidth="257.0" />
+      <Label layoutX="46.0" layoutY="449.0" text="Manzana =" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField id="txtManzanaResidente" fx:id="txtManzanaResidente" layoutX="179.0" layoutY="449.0" prefHeight="38.0" prefWidth="257.0" />
+      <Label layoutX="45.0" layoutY="502.0" text="Villa         =" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField id="txtVillaResidente" fx:id="txtVillaResidente" layoutX="178.0" layoutY="502.0" prefHeight="38.0" prefWidth="257.0" />
+      <Button id="btnRegresarPunto" fx:id="btnRegresarPunto" layoutX="37.0" layoutY="608.0" mnemonicParsing="false" onAction="#regresarPuntoAcceso" text="Regresar a Punto Acceso">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="187.0" fitWidth="231.0" layoutX="455.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@guardia.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

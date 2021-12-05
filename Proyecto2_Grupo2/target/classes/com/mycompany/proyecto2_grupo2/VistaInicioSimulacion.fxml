@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="aPaneFondo" fx:id="aPaneFondo" prefHeight="600.0" prefWidth="700.0" stylesheets="@vistainiciosimulacion.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyecto2_grupo2.VistaInicioSimulacionController">
+   <children>
+      <HBox layoutX="6.0" layoutY="8.0" prefHeight="64.0" prefWidth="692.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="64.0" prefWidth="692.0" text="SIMULACION">
+               <font>
+                  <Font size="66.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <textFill>
+                  <RadialGradient centerX="0.9666666666666667" centerY="0.8809523809523809" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+      </HBox>
+      <Button id="btnResidentes" fx:id="btnResidentes" layoutX="250.0" layoutY="185.0" mnemonicParsing="false" onAction="#irSimuResidentes" prefHeight="55.0" prefWidth="201.0" text="RESIDENTES">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button id="btnVisitantes" fx:id="btnVisitantes" layoutX="250.0" layoutY="273.0" mnemonicParsing="false" onAction="#irSimuVisitantes" prefHeight="55.0" prefWidth="201.0" text="VISITANTES">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button id="btnTerminarSimulacion" fx:id="btnTerminarSimulacion" layoutX="485.0" layoutY="523.0" mnemonicParsing="false" onAction="#terminarSimulacion" prefHeight="35.0" prefWidth="164.0" stylesheets="@vistainiciosimulacion.css" text="TERMINAR SIMULACION" />
+      <ImageView fitHeight="230.0" fitWidth="244.0" layoutX="231.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@robot.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

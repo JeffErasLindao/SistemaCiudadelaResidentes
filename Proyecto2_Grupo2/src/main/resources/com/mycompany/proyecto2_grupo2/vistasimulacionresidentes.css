@@ -1,0 +1,39 @@
+#lblPinPantalla{
+    -fx-background-color: black;
+    -fx-background-size: 100% 100%;
+    -fx-text-fill: yellow;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+}
+
+#txtPinPantalla{
+    -fx-background-color: black;
+    -fx-background-size: 100% 100%;
+    -fx-text-fill: yellow;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+}
+
+#btnTerminarSimulacion{
+    
+    -fx-background-size: 100% 100%;
+    -fx-text-fill: red;
+    -fx-font-weight: bold;   
+}
+
+#btnIngresar{
+   -fx-background-size: 100% 100%;
+    -fx-text-fill: green;
+    -fx-font-weight: bold;   
+}
+
+#btnScanearMatricula{
+   -fx-background-size: 100% 100%;
+    -fx-text-fill: green;
+    -fx-font-weight: bold;   
+}
+
+#aPaneFondo{
+    -fx-background-image: url('fondoSimulacion4.jpg');
+    -fx-background-size: 100% 100%;
+}

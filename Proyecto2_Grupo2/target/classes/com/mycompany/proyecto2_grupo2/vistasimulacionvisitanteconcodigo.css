@@ -1,0 +1,23 @@
+#btnTerminarSimulacion{
+    
+    -fx-background-size: 100% 100%;
+    -fx-text-fill: red;
+    -fx-font-weight: bold;   
+}
+
+
+#btnIngresar{
+   -fx-background-size: 100% 100%;
+    -fx-text-fill: green;
+    -fx-font-weight: bold;   
+}
+
+#aPaneFondo{
+    -fx-background-image: url('fondoSimulacion2.jpg');
+    -fx-background-size: 100% 100%;
+}
+
+#PaneMapa{
+    -fx-background-image: url('calle3.png');
+    -fx-background-size: 100% 100%;
+}
