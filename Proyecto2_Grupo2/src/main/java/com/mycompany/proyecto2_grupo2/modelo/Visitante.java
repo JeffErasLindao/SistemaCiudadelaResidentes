@@ -102,26 +102,15 @@ public class Visitante implements Serializable{
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
+        final Visitante o = (Visitante) obj;
         if (obj == null) {
             return false;
+        } else {
+            if(this.nombre.equals(o.getNombre()) && this.correo.equals(o.getCorreo()) && this.cedula.equals(o.getCedula())){
+            return true;
+            }else{return false;}
         }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Visitante other = (Visitante) obj;
-        if (!Objects.equals(this.nombre, other.nombre)) {
-            return false;
-        }
-        if (!Objects.equals(this.cedula, other.cedula)) {
-            return false;
-        }
-        if (!Objects.equals(this.correo, other.correo)) {
-            return false;
-        }
-        return true;
+
     }
 
     @Override
