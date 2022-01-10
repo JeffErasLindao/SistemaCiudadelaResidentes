@@ -104,22 +104,6 @@ public class VistaAdministradorController implements Initializable {
                 Tooltip t = new Tooltip(ca.verResidente()+ ca.getUbicacion().toString());
                 Tooltip.install(casa, t);
 
-
-                casa.setOnMouseDragExited((MouseEvent ev0) -> {
-                    if (ca.getResidente() != null) {
-                        Alert al = new Alert(Alert.AlertType.INFORMATION);
-                        al.setContentText("Manzana" + String.valueOf(ca.getUbicacion().getX()) + "\n" + "Villa" + String.valueOf(ca.getUbicacion().getY()) + "\n" + "Residente" + ca.getResidente().getNombre());
-                        al.show();
-
-                    } else {
-
-                        Alert al = new Alert(Alert.AlertType.INFORMATION);
-                        al.setContentText("Manzana" + String.valueOf(ca.getUbicacion().getX()) + "\n" + "Villa" + String.valueOf(ca.getUbicacion().getY()) + "\n" + "Residente: No hay Residente");
-                        al.show();
-                    }
-                });//FIN DEL EVENTO MOUSE DRAG
-                
-
                 casa.setOnMouseClicked((MouseEvent ev) -> {
                     
                     formularioRegistro.setDisable(false);

@@ -24,19 +24,15 @@ public class Ubicacion implements Serializable{
     public void setX(double x) {
         this.x = x;
     }
-    public double getY() {
+    public double getY() { 
         return y;
     }
     public void setY(double y) {
         this.y = y;
     }
-    /**
-     * calcula la distancia cartesiana entre la ubicacion pasada 
-     * como parametro y el objeto que llama a la funcion
-     * d =  ( (x2 - x1)^2 + (y2 - y1)^2 )^1/2
-     * */
-    public double calcularDistancia(Ubicacion u){
-        return Math.sqrt(Math.pow(u.x-x,2) + Math.pow(u.y - y,2));
+
+    public double calcularDistanciaCartesiana(){
+        return Math.sqrt(Math.pow(this.x-this.x,2) + Math.pow(this.y - this.y,2));
     }
 
     @Override
